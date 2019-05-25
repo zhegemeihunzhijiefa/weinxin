@@ -3,19 +3,29 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
+
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	<!-- 本项目的信息 -->
+	<!-- 分组的ID，域名倒写 -->
 	<groupId>org.zhegemeihunzhijiefa</groupId>
+	<!-- 项目名称 ，jar文件的名称-->
 	<artifactId>weixin</artifactId>
+	<!-- 本项目的版本号 -->
 	<version>0.0.1-SNAPSHOT</version>
+	<!-- 项目的显示名称，但是在Eclipse里面不生成 -->
 	<name>微信图书馆</name>
 	<description>小程序大未来的微信项目</description>
 
 	<properties>
 		<java.version>11</java.version>
+		<!-- 源代码的字符编码 -->
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<!-- 报告文件的字符编码 -->
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
 	<dependencies>
@@ -41,6 +51,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<!-- 开发者工具，用于实现热部署（修改文件以后马上生效） -->
+		<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-devtools</artifactId>
+		<!-- scope必须是runtime才能生效 -->
+		<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
