@@ -3,4 +3,3 @@ spring.datasource:
    username: shujuku
    password: 1234
    
-server.port: 8089
